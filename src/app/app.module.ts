@@ -5,22 +5,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserDataComponent } from './user-data/user-data.component';
+import { HttpClientModule } from '@angular/common/http';
 import { SearchUserComponent } from './search-user/search-user.component';
-
-
+import { UserDataComponent } from './user-data/user-data.component';
 @NgModule({
   declarations: [
     AppComponent,
-    UserDataComponent,
     SearchUserComponent,
+    UserDataComponent
 
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
