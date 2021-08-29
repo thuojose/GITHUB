@@ -9,12 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchUserComponent } from './search-user/search-user.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { UserRepoListComponent } from './user-repo-list/user-repo-list.component';
+import { NavComponent } from './nav/nav.component';
 @NgModule({
   declarations: [
     AppComponent,
     SearchUserComponent,
     UserDataComponent,
-    UserRepoListComponent
+    UserRepoListComponent,
+    NavComponent
 
  
   ],
