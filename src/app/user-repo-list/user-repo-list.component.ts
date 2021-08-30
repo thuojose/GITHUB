@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RepoServiceService } from '../repo-service.service';
 import { RepoModel } from '../repo-model';
+
 @Component({
   selector: 'app-user-repo-list',
   templateUrl: './user-repo-list.component.html',
@@ -8,10 +9,11 @@ import { RepoModel } from '../repo-model';
 })
 export class UserRepoListComponent implements OnInit {
   myRepo:RepoModel[];
-  constructor(public reposervice:RepoServiceService) {
+
+  constructor(public reposerv:RepoServiceService) {
    }
    getRepo(searchTerm:string){
-     this.reposervice.getRepo(searchTerm).subscribe(data => {
+     this.reposerv.getRepo(searchTerm).subscribe(data => {
        this.myRepo =data;
        console.log(this.myRepo);
      });

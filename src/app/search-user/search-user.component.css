@@ -3,7 +3,7 @@
     padding-bottom:40px;
   }
   #search{
-    border-color:#00FFFF;
+    border-color:black;
   }
   input {
     background-color: #00FFFF;
@@ -19,12 +19,12 @@
     font-family:'Berkshire Swash', cursive;
   }
   input::placeholder{
-    color: #00FFFF;
+    color:white;
   
   }
   input[type=text] {
-    background-color: red;
-    color: #00FFFF;
+    background-color:whitesmoke;
+    color: black;
     font-family:'Berkshire Swash', cursive;
   }
   

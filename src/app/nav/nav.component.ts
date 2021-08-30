@@ -9,7 +9,7 @@ export class NavComponent implements OnInit {
 logo="G-Search"
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

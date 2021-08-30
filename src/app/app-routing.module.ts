@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserDataComponent } from './user-data/user-data.component';
-const routes: Routes = [];
+import { NotFoundComponent } from './not-found/not-found.component';
+import { UserRepoListComponent } from './user-repo-list/user-repo-list.component';
+
+const routes: Routes = [
+ {path: 'user-list',component:UserDataComponent},
+ {path: 'repo-list',component:UserRepoListComponent},
+ {path: '',redirectTo:'/user-list',pathMatch:'full'},
+ {path: '**',component:NotFoundComponent} 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
