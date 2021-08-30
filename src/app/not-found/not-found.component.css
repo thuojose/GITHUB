@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Cabin+Sketch|Calligraffitti|Fredericka+the+Great|Leckerli+One|Rochester|Shojumaru&display=swap");
+
+.error{
+  height: 614px;
+  background-image: url("../../assets/404.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.overlay{
+  background-color: rgba(0,0,0,0.965);
+  height: inherit;
+}
+h1{
+  position: relative;
+  top: 40%;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 70px;
+}
