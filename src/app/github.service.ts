@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import { GitUser } from './git-user';
 import { SearchUserComponent } from './search-user/search-user.component';
-
+import 'rxjs/add/operator/map'
 
 
 @Injectable({
@@ -29,16 +29,15 @@ export class GithubService {
       bio:string;
       searchTerms:string;
 
-    }
-
-    return new Promise((resolve, reject) => {
+    } 
+    return new Promise<void>((resolve, reject) => {
       this.user = [];
 
       this.http.get<data>(this._URL + searchTerm + this.token).toPromise().then(
         (results) => {
           
           this.user.push(results);
-          resolve;
+          resolve();
         },
         (error) => {
           reject();
