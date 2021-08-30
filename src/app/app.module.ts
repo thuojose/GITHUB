@@ -11,6 +11,9 @@ import { UserDataComponent } from './user-data/user-data.component';
 import { UserRepoListComponent } from './user-repo-list/user-repo-list.component';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LogoHighlight } from './logo-highlight.directive/logo-highlight.directive.component';
+import { HighlightDirective } from './highlight.directive';
+import { LogoHighlightDirective } from './logo-highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     UserDataComponent,
     UserRepoListComponent,
     NavComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LogoHighlight.DirectiveComponent,
+    HighlightDirective,
+    LogoHighlightDirective
 
  
   ],
