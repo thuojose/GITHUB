@@ -9,7 +9,7 @@ export class LogoHighlightDirective {
   @HostListener("click") onClicks(){
     this.textDeco("aqua")
   }
-  @HostListener("dclick") onDoubleClicks(){
+  @HostListener("dbclick") onDoubleClicks(){
     this.textDeco("transparent")
   }
 
