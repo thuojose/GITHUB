@@ -11,11 +11,12 @@ import {Observable}  from'rxjs'
 })
 export class GithubService {
   user:GitUser[] = [];
-  _URL = 'https://api.github.com/users/';
-  token = "?access_token=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"
 
   constructor(private http :HttpClient) { 
   }
+  _URL = 'https://api.github.com/users/';
+  private clientId = environment.clientId
+  private clientSecret = environment.clientSecret
 
   searchMyUSer(searchTerm:string) {
 
@@ -34,7 +35,7 @@ export class GithubService {
     return new Promise<void>((resolve, reject) => {
       this.user = [];
 
-      this.http.get<data>(this._URL + searchTerm + this.token).toPromise().then(
+      this.http.get<data>(`https://api.github.com/users/${searchTerm}?${this.clientId}&client_secret=${this.clientSecret}`).toPromise().then(
         (results) => {
           
           this.user.push(results);
