@@ -1,27 +1,64 @@
-# Github
+# Git-Search
+This project was generated with Angular CLI version and it entails about git search where the user can search a userand also view their repositories. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+## Author
+Joseph Mbugua.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Git search app is where Users enter a GitHub username into a form,submit it, and see names and descriptions of that person's public repositories.The  app is developed using Angular CLI ,Bootstrap ,Typescript nodejs and npm .Given is the live link  
 
-## Code scaffolding
+## Installations
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* nodejs
+* npm
+* Angular CLI
+* Typescript
 
-## Build
+## Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run https://github.com/thuojose/GITHUB.git
 
-## Running unit tests
+or download the zip file from github.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After extracting the files, run
+* Open the file with code .
+* cd Github
+*  ng serve for a dev server
+* Navigate to `http://localhost:4200/ The app will automatically reload 
 
-## Running end-to-end tests
+you can also run tests with ng test
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies Used
+* Html5
+* Css
+* Typescript
+* Bootstrap
+* Angular
+* Github Api's
+
+## BDD(Behaviour Driven Development)
+
+* Input username on the form provided ie Github username, eg (thuojose) and press search button 
+
+* Outputs   Description
+
+* User data A specific user profile information.
+* Repositories  All repositories created by a user and its descriptions.
+
+
+## License
+MIT License
+
+Copyright (c) 2021 thuojose
+
+
+## Collaborate
+
+To collaborate, reach me on thuojose16@gmail.com
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README]
+
+
