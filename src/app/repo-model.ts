@@ -9,4 +9,5 @@ export class RepoModel {
     language: any;
     created_at:Date
     searchTerms:any;
+    html_url:string
 }

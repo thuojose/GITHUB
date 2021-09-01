@@ -13,6 +13,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LogoHighlightDirective } from './logo-highlight.directive';
 import { FooterComponent } from './footer/footer.component';
 import { DataCountPipe } from './data-count.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { DataCountPipe } from './data-count.pipe';
     AppRoutingModule,
     HttpClientModule,
     FormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

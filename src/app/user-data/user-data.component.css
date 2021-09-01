@@ -1,5 +1,5 @@
 .container-full {
-  background-image: url("../../assets/bac.jpg");
+  background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 3px;
@@ -35,7 +35,7 @@
   
   
   .jumbotron {
-    background-color: #00FFFF;
+    background-color:orange;
   }
   
   @media (max-width: 740px) {

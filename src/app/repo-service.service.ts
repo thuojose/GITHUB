@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class RepoServiceService {
   _URL = 'https://api.github.com/users/';
-  token = "?access_token=d7053f4fe09fb160156588c45bd61cb49f8fe9bd"
+  token = "?access_token=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"
   constructor(private http :HttpClient) { 
   }
   getRepo(searchTerm: string): Observable<any> {

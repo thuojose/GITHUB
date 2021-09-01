@@ -8,15 +8,15 @@ import { GithubService } from '../github.service';
   styleUrls: ['./user-data.component.css']
 })
 export class UserDataComponent implements OnInit {
-  user:GitUser[];
-  particleJS:any;
+  user:any[];
+  particlesJS:any;
 
   constructor(private service: GithubService) {
   }
 
-  getSearchedUser(searchTerm) {
-    this.service.searchMyUSer(searchTerm).then(
-      (success) => {
+  getSearchedUser(searchTerm:string) {
+    
+    this.service.searchMyUSer(searchTerm).then(user => {
         this.user = this.service.user;
         console.log(this.user);
       },
@@ -29,7 +29,7 @@ export class UserDataComponent implements OnInit {
   ngOnInit() {
     this.getSearchedUser('thuojose');
     let particlesJS;
-  particlesJS.load('particles-js', 'particles.json', null);
+    particlesJS.load('particles-js', 'particles.json', null);
   }
 
 }

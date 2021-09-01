@@ -7,12 +7,14 @@ export class LogoHighlightDirective {
 
   constructor(private element:ElementRef) {}
   @HostListener("click") onClicks(){
-    this.textDeco("aqua")
+  this.textDeco("aqua")
   }
+
   @HostListener("dbclick") onDoubleClicks(){
     this.textDeco("transparent")
   }
 
+  
   private textDeco(action:string){
     this.element.nativeElement.style.backgroundColour=action;
   }

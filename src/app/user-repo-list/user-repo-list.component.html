@@ -16,7 +16,9 @@
           <p id="watch" class="text-center">Watch <span class="data">{{repo.watch}}</span></p>
           <p id="forks" class="text-center">Forks <span class="data">{{repo.forks}}</span></p>
           <p id="branch" class="text-center">Branch <span class="data">{{repo.default_branch}} </span></p>
-        </div>
+          <p class="clearfix">
+            {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right">View on github</a>
+          </p>
       </div>
     </div>
   </div>
