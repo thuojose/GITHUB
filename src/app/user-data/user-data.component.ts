@@ -28,8 +28,8 @@ export class UserDataComponent implements OnInit {
 
   ngOnInit() {
     this.getSearchedUser('thuojose');
-    let particlesJS;
-    particlesJS.load('particles-js', 'particles.json', null);
+    // let particlesJS;
+    // particlesJS.load('particles-js', 'particles.json', null);
   }
 
 }
